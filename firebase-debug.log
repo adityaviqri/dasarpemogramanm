@@ -1,0 +1,82 @@
+[debug] [2023-01-08T04:47:26.766Z] ----------------------------------------------------------------------
+[debug] [2023-01-08T04:47:26.770Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\alpi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2023-01-08T04:47:26.771Z] CLI Version:   11.20.0
+[debug] [2023-01-08T04:47:26.772Z] Platform:      win32
+[debug] [2023-01-08T04:47:26.772Z] Node Version:  v18.13.0
+[debug] [2023-01-08T04:47:26.774Z] Time:          Sat Jan 07 2023 20:47:26 GMT-0800 (Pacific Standard Time)
+[debug] [2023-01-08T04:47:26.774Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-08T04:47:26.791Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-08T04:47:26.793Z] > authorizing via signed-in user (alfiyovandanu@student.uir.ac.id)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\alpi\Desktop\alpi\TUGASDPM
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-08T04:47:35.703Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-01-08T04:47:47.957Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-01-08T04:47:47.957Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project tugasdpm-f56a4 (TUGASDPM) 
+[info] 
+=== Functions Setup
+[debug] [2023-01-08T04:48:13.471Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-08T04:48:13.472Z] > authorizing via signed-in user (alfiyovandanu@student.uir.ac.id)
+[debug] [2023-01-08T04:48:13.472Z] [iam] checking project tugasdpm-f56a4 for permissions ["firebase.projects.get"]
+[debug] [2023-01-08T04:48:13.473Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugasdpm-f56a4:testIamPermissions [none]
+[debug] [2023-01-08T04:48:13.474Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugasdpm-f56a4:testIamPermissions x-goog-quota-user=projects/tugasdpm-f56a4
+[debug] [2023-01-08T04:48:13.474Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugasdpm-f56a4:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-08T04:48:25.952Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugasdpm-f56a4:testIamPermissions 200
+[debug] [2023-01-08T04:48:25.952Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tugasdpm-f56a4:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-08T04:48:25.953Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/tugasdpm-f56a4/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-01-08T04:48:25.953Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/tugasdpm-f56a4/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/tugasdpm-f56a4
+[debug] [2023-01-08T04:48:25.956Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/tugasdpm-f56a4/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-01-08T04:48:25.956Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/tugasdpm-f56a4/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/tugasdpm-f56a4
+[debug] [2023-01-08T04:48:27.814Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/tugasdpm-f56a4/services/cloudfunctions.googleapis.com 200
+[debug] [2023-01-08T04:48:27.815Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/tugasdpm-f56a4/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-01-08T04:48:27.816Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/tugasdpm-f56a4/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-01-08T04:48:27.816Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/tugasdpm-f56a4/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/tugasdpm-f56a4
+[debug] [2023-01-08T04:48:27.822Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/tugasdpm-f56a4/services/runtimeconfig.googleapis.com 200
+[debug] [2023-01-08T04:48:27.823Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/tugasdpm-f56a4/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-01-08T04:48:29.810Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/tugasdpm-f56a4/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-01-08T04:48:29.810Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/tugasdpm-f56a4/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-01-08T04:48:39.812Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/tugasdpm-f56a4/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-01-08T04:48:39.812Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/tugasdpm-f56a4/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/tugasdpm-f56a4
+[debug] [2023-01-08T04:48:41.575Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/tugasdpm-f56a4/services/cloudfunctions.googleapis.com 200
+[debug] [2023-01-08T04:48:41.575Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/tugasdpm-f56a4/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] 
+[info] +  Firebase initialization complete! 
+[debug] [2023-01-08T04:53:06.661Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\alpi\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
